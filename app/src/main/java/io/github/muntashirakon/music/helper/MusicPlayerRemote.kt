@@ -203,6 +203,14 @@ object MusicPlayerRemote : KoinComponent {
         musicService?.play()
     }
 
+    fun rewind5Sec() {
+        musicService?.seek(musicService!!.getSongProgressMillis() - 5000)
+    }
+
+    fun forward5Sec() {
+        musicService?.seek(musicService!!.getSongProgressMillis() + 5000)
+    }
+
     /**
      * Async
      */

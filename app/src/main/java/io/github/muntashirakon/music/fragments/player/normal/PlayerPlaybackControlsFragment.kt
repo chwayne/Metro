@@ -174,8 +174,8 @@ class PlayerPlaybackControlsFragment :
 
     private fun setUpPrevNext() {
         updatePrevNextColor()
-        nextButton.setOnClickListener { MusicPlayerRemote.playNextSong() }
-        previousButton.setOnClickListener { MusicPlayerRemote.back() }
+        nextButton.setOnClickListener { MusicPlayerRemote.forward5Sec() }
+        previousButton.setOnClickListener { MusicPlayerRemote.rewind5Sec() }
     }
 
     private fun updatePrevNextColor() {
